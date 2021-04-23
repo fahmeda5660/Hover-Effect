@@ -14,17 +14,17 @@
 }
 
 button {
+    font-size: 14px;
     color: white;
     background: rgb(5, 85, 109);
-    border: 1px solid rgb(94, 7, 36);
+    border: 1px solid rgb(255, 255, 255);
     transition: ease-out .4s;
 }
 
- button:hover {
-    background: rgb(94, 7, 36);
-}
+
 /* *****************************EFFECT 01***************************** */
-/* *****************************LEFT***************************** */
+
+/* *****************************EFFECT 01: LEFT***************************** */
 .hover .effect-1 .overlay-left {
     width: 40%;
     height: 100%;
@@ -50,8 +50,8 @@ button {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* *****************************CENTER / UP***************************** */
-.hover  .effect-1 .overlay-up {
+/* *****************************EFFECT 01: CENTER / UP***************************** */
+.hover .effect-1 .overlay-up {
     width: 100%;
     height: 100%;
     background: rgba(241, 160, 201, 0.5);
@@ -60,12 +60,12 @@ button {
     transition: 1s;
 }
 
-.hover  .effect-1 .img:hover .overlay-up {
+.hover .effect-1 .img:hover .overlay-up {
     bottom: 0;
     transform: scale(1) rotate(360deg);
 }
 
-.hover  .effect-1 .overlay-up .content i {
+.hover .effect-1 .overlay-up .content i {
     width: 38px;
     height: 38px;
     border: 1px solid #fff;
@@ -82,7 +82,7 @@ button {
     transform: scale(1.5);
 }
 
-/* *****************************RIGHT***************************** */
+/* *****************************EFFECT 01: RIGHT***************************** */
 .hover .effect-1 .overlay-right {
     width: 100%;
     height: 80%;
@@ -105,7 +105,15 @@ button {
     transform: translate(-50%, -50%);
 }
 
+.hover .effect-1 .overlay-right .content:hover {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+}
 
+.hover .effect-1 button:hover {
+    background: rgb(94, 7, 36);
+    margin-left: 38px;
+}
 
 /* *****************************EFFECT 02***************************** */
 
@@ -116,8 +124,8 @@ button {
     transform: translate(-50%, -50%);
 }
 
-/* *****************************LEFT***************************** */
-.hover  .effect-2 .overlay-left {
+/* *****************************EFFECT 02: LEFT***************************** */
+.hover .effect-2 .overlay-left {
     width: 100%;
     height: 100%;
     background: rgba(241, 160, 201, 0.5);
@@ -127,11 +135,12 @@ button {
     transition: 1s;
 }
 
-.hover  .effect-2 .img:hover .overlay-left {
+.hover .effect-2 .img:hover .overlay-left {
     left: 0%;
     bottom: 0%;
 }
-.hover  .effect-2 .overlay-up .content i {
+
+.hover .effect-2 .overlay-up .content i {
     width: 38px;
     height: 38px;
     border: 1px solid #fff;
@@ -147,8 +156,12 @@ button {
     color: rgb(236, 225, 124);
     transform: scale(1.5);
 }
-/* *****************************CENTER / UP***************************** */
-.hover  .effect-2 .overlay-up {
+
+
+/* *****************************EFFECT 02: CENTER / UP***************************** */
+
+
+.hover .effect-2 .overlay-up {
     width: 100%;
     height: 100%;
     background: rgba(241, 160, 201, 0.5);
@@ -158,12 +171,13 @@ button {
     transition: 1s;
 }
 
-.hover  .effect-2 .img:hover .overlay-up {
+.hover .effect-2 .img:hover .overlay-up {
     top: 0;
     right: 0;
 }
-/* *****************************RIGHT***************************** */
-.hover  .effect-2 .overlay-right {
+
+/* *****************************EFFECT 02: RIGHT***************************** */
+.hover .effect-2 .overlay-right {
     width: 100%;
     height: 100%;
     background: rgba(241, 160, 201, 0.5);
@@ -173,8 +187,311 @@ button {
     transition: 1s;
 }
 
-.hover  .effect-2 .img:hover .overlay-right {
+.hover .effect-2 .img:hover .overlay-right {
     bottom: 0;
     right: 0;
 }
 
+.hover .effect-2 button:hover {
+    background: rgb(94, 7, 36);
+    transform: scaleY(1.5);
+}
+
+/* *****************************EFFECT 03***************************** */
+
+/* *****************************EFFECT 03: LEFT***************************** */
+.hover .effect-3 .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(241, 160, 201, 0.5);
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .img:hover .overlay {
+    left: 0%;
+    bottom: 0%;
+    opacity: 1;
+}
+
+.hover .effect-3 .overlay .content i {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #fff;
+    /* border-radius: 50%; */
+    text-align: center;
+    line-height: 38px;
+    background: rgb(31, 30, 30);
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    position: relative;
+}
+
+/* ******************************EFFECT 03: LEFT******************************* */
+.hover .effect-3 .overlay-left .content .fb {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .overlay-left .content .ln {
+    position: absolute;
+    top: 38%;
+    left: 15%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .overlay-left .content .tt {
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .overlay-left .content .ig {
+    position: absolute;
+    bottom: 46%;
+    right: 5%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .img:hover .overlay-left .content .fb {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .img:hover .overlay-left .content .ln {
+    position: absolute;
+    top: 38%;
+    left: 39%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .img:hover .overlay-left .content .tt {
+    position: absolute;
+    bottom: 33%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .img:hover .overlay-left .content .ig {
+    position: absolute;
+    bottom: 46%;
+    right: 25%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .overlay .content i:hover {
+    color: rgb(160, 20, 32);
+    border-color: rgb(160, 20, 32);
+    background: rgb(255, 255, 255);
+}
+
+/* ******************************EFFECT 03:  MIDDLE******************************* */
+.hover .effect-3 .overlay-middle .content .fb {
+    position: absolute;
+    top: 29%;
+    left: 43%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .overlay-middle .content .ln {
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .overlay-middle .content .tt {
+    position: absolute;
+    bottom: 41%;
+    left: 55%;
+    ;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .overlay-middle .content .ig {
+    position: absolute;
+    bottom: 55%;
+    right: 32%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .img:hover .overlay-middle .content .fb {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .img:hover .overlay-middle .content .ln {
+    position: absolute;
+    top: 38%;
+    left: 39%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .img:hover .overlay-middle .content .tt {
+    position: absolute;
+    bottom: 33%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .img:hover .overlay-middle .content .ig {
+    position: absolute;
+    bottom: 46%;
+    right: 25%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* ******************************EFFECT 03: RIGHT******************************* */
+.hover .effect-3 .overlay-right .content .fb {
+    position: absolute;
+    top: 14%;
+    right: 12%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .overlay-right .content .ln {
+    position: absolute;
+    top: 14%;
+    left: 23%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .overlay-right .content .tt {
+    position: absolute;
+    bottom: 25%;
+    left: 23%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .overlay-right .content .ig {
+    position: absolute;
+    bottom: 25%;
+    right: 12%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover .effect-3 .img:hover .overlay-right .content .fb {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .img:hover .overlay-right .content .ln {
+    position: absolute;
+    top: 38%;
+    left: 39%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .img:hover .overlay-right .content .tt {
+    position: absolute;
+    bottom: 33%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.hover .effect-3 .img:hover .overlay-right .content .ig {
+    position: absolute;
+    bottom: 46%;
+    right: 25%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* ******************************EFFECT 04******************************* */
+.hover4 .img {
+    height: 300px;
+    width: 400px;
+    background-image: url("../images/team.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.hover .effect-4 .overlay {
+    width: 20%;
+    height: 100%;
+    background: rgba(43, 41, 41, 0.5);
+    position: absolute;
+    left: -20%;
+    transition: 1s;
+}
+.hover4 .effect-4 .overlay .content.content {
+    margin-top: 50px;
+}
+.hover4 .effect-4 .overlay .content i {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    background: rgb(31, 30, 30);
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 16px;
+}
+.hover4 .effect-4 .img-bottom p {
+    background: rgb(213, 230, 245);
+    padding: 10px;
+    opacity: 0;
+}
+
+/* ******************************EFFECT 04: RIGHT******************************* */
+
+.hover .effect-4 .img:hover .overlay {
+    left: 0;
+}
+.hover .effect-4 .img:hover .img-bottom p {
+    opacity: 1;
+}
+.hover .effect-4 .overlay a {
+    transition: 1s;
+}
